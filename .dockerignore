@@ -1,0 +1,28 @@
+.venv/
+.git/
+.claude/
+.cursor/
+frontend/node_modules/
+frontend/dist/
+frontend/.env.development
+# Exclude the larger model sets not used by the backend
+models/model (50dim)/
+models/eval_results (50 dim)/
+models/evaluation_test (42 dim)/
+models_6535/
+# Exclude training data (raw, large)
+acne_1024/
+data_split/
+data_split_6535/train/
+# Other
+*.ipynb
+diagnostics/
+catboost_info/
+*.png
+*.md
+docs/
+tests/
+scripts/
+__pycache__/
+*.pyc
+.pytest_cache/

@@ -1,0 +1,100 @@
+| SVM (Polynomial)             |  0.7151   |  0.7178   |  0.7151   |  0.7164   |  13    |
+| Extra Trees                  |  0.6983   |  0.7470   |  0.6983   |  0.7155   |  14    |
+| Bagging SVM                  |  0.6927   |  0.7581   |  0.6927   |  0.7153   |  15    |
+| QDA                          |  0.7095   |  0.7185   |  0.7095   |  0.7087   |  16    |
+| HistGradientBoosting         |  0.6872   |  0.7411   |  0.6872   |  0.7078   |  17    |
+| Random Forest                |  0.6816   |  0.7470   |  0.6816   |  0.7043   |  18    |
+| Gradient Boosting            |  0.6760   |  0.7540   |  0.6760   |  0.7017   |  19    |
+| Gaussian NB                  |  0.6983   |  0.6954   |  0.6983   |  0.6900   |  20    |
+| AdaBoost                     |  0.6201   |  0.7447   |  0.6201   |  0.6587   |  21    |
++------------------------------+-----------+-----------+-----------+-----------+--------+
+
+┌──────────────────────────────────────────────────────────┐
+│          BEST MODEL PER METRIC (OVERALL)                 │
+├───────────────┬──────────────────────────────────────────┤
+│ Metric        │ Best Model                               │
+├───────────────┼──────────────────────────────────────────┤
+│ Accuracy      │ Calibrated Linear SVM            (0.7542) │
+│ Precision     │ Calibrated Linear SVM            (0.7657) │
+│ Recall        │ Calibrated Linear SVM            (0.7542) │
+│ F1            │ Calibrated Linear SVM            (0.7572) │
+└───────────────┴──────────────────────────────────────────┘
+
+=============================================================================
+====================== PER-CLASS RANKING  ›  acne2_1024 =====================
+=============================================================================
++------------------------------+-----------+-----------+-----------+--------+
+| Model                        | Precision | Recall    | F1-Score  |  Rank  |
++------------------------------+-----------+-----------+-----------+--------+
+| Calibrated Linear SVM        |  0.4828   |  0.4000   |  0.4375   |  1   ★ |
+| SVM (Linear)                 |  0.3953   |  0.4857   |  0.4359   |  2     |
+| KNN                          |  0.3778   |  0.4857   |  0.4250   |  3     |
+| Ridge Classifier             |  0.4242   |  0.4000   |  0.4118   |  4     |
+| Stacking Ensemble (top-5)    |  0.3636   |  0.4571   |  0.4051   |  5     |
+| SVM (RBF)                    |  0.3750   |  0.4286   |  0.4000   |  6     |
+| CatBoost                     |  0.3556   |  0.4571   |  0.4000   |  7     |
+| Bagging SVM                  |  0.3556   |  0.4571   |  0.4000   |  8     |
+| LDA                          |  0.3478   |  0.4571   |  0.3951   |  9     |
+| MLP                          |  0.3889   |  0.4000   |  0.3944   |  10    |
+| SGD Classifier               |  0.4444   |  0.3429   |  0.3871   |  11    |
+| Voting Ensemble (top-3)      |  0.3488   |  0.4286   |  0.3846   |  12    |
+| Extra Trees                  |  0.3590   |  0.4000   |  0.3784   |  13    |
+| Gradient Boosting            |  0.3200   |  0.4571   |  0.3765   |  14    |
+| Random Forest                |  0.3333   |  0.4286   |  0.3750   |  15    |
+| Logistic Regression          |  0.3500   |  0.4000   |  0.3733   |  16    |
+| SVM (Polynomial)             |  0.3611   |  0.3714   |  0.3662   |  17    |
+| HistGradientBoosting         |  0.3111   |  0.4000   |  0.3500   |  18    |
+| AdaBoost                     |  0.2807   |  0.4571   |  0.3478   |  19    |
+| QDA                          |  0.3846   |  0.2857   |  0.3279   |  20    |
+| Gaussian NB                  |  0.3182   |  0.2000   |  0.2456   |  21    |
++------------------------------+-----------+-----------+-----------+--------+
+  Best F1        → Calibrated Linear SVM
+  Best Precision → Calibrated Linear SVM
+  Best Recall    → SVM (Linear)
+
+=============================================================================
+====================== PER-CLASS RANKING  ›  acne3_1024 =====================
+=============================================================================
++------------------------------+-----------+-----------+-----------+--------+
+| Model                        | Precision | Recall    | F1-Score  |  Rank  |
++------------------------------+-----------+-----------+-----------+--------+
+| Gradient Boosting            |  0.4667   |  0.7368   |  0.5714   |  1   ★ |
+| CatBoost                     |  0.4815   |  0.6842   |  0.5652   |  2     |
+| SVM (RBF)                    |  0.5000   |  0.6316   |  0.5581   |  3     |
+| SVM (Polynomial)             |  0.5263   |  0.5263   |  0.5263   |  4     |
+| Voting Ensemble (top-3)      |  0.4444   |  0.6316   |  0.5217   |  5     |
+| HistGradientBoosting         |  0.4444   |  0.6316   |  0.5217   |  6     |
+| Logistic Regression          |  0.4444   |  0.6316   |  0.5217   |  7     |
+| Bagging SVM                  |  0.4194   |  0.6842   |  0.5200   |  8     |
+| Random Forest                |  0.4194   |  0.6842   |  0.5200   |  9     |
+| Stacking Ensemble (top-5)    |  0.4583   |  0.5789   |  0.5116   |  10    |
+| QDA                          |  0.4062   |  0.6842   |  0.5098   |  11    |
+| Extra Trees                  |  0.4062   |  0.6842   |  0.5098   |  12    |
+| Gaussian NB                  |  0.3939   |  0.6842   |  0.5000   |  13    |
+| SVM (Linear)                 |  0.4545   |  0.5263   |  0.4878   |  14    |
+| MLP                          |  0.3871   |  0.6316   |  0.4800   |  15    |
+| Ridge Classifier             |  0.4074   |  0.5789   |  0.4783   |  16    |
+| LDA                          |  0.4348   |  0.5263   |  0.4762   |  17    |
+| Calibrated Linear SVM        |  0.3929   |  0.5789   |  0.4681   |  18    |
+| AdaBoost                     |  0.3636   |  0.6316   |  0.4615   |  19    |
+| SGD Classifier               |  0.3571   |  0.5263   |  0.4255   |  20    |
+| KNN                          |  0.3333   |  0.4211   |  0.3721   |  21    |
++------------------------------+-----------+-----------+-----------+--------+
+  Best F1        → Gradient Boosting
+  Best Precision → SVM (Polynomial)
+  Best Recall    → Gradient Boosting
+
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+  OVERALL CHAMPION (weighted F1): Calibrated Linear SVM
+  Accuracy=0.7542  Precision=0.7657  Recall=0.7542  F1=0.7572
+  acne1_1024: F1=0.8907
+  acne2_1024: F1=0.4375
+  acne3_1024: F1=0.4681
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+
+Full results saved to D:\TUGAS\comvislab\project\Comvis-Research\models\eval_results\model_comparison.csv
+Saved: D:\TUGAS\comvislab\project\Comvis-Research\models\eval_results\model_comparison.png
+Saved: D:\TUGAS\comvislab\project\Comvis-Research\models\eval_results\best_per_metric.png
+Saved: D:\TUGAS\comvislab\project\Comvis-Research\models\eval_results\per_class_ranking.png
+
+Done.

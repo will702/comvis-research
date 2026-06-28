@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #fafaf8;
+    color: #1a1a1a;
+    font-family: "Manrope", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #d4d4d4; border-radius: 9999px; }
+}
+
+@layer utilities {
+  .font-display { font-family: "Bricolage Grotesque", system-ui, sans-serif; }
+  .font-mono    { font-family: "Fira Code", ui-monospace, monospace; }
+}

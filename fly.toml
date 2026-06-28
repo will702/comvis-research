@@ -1,0 +1,25 @@
+# Fly.io deployment config
+# Deploy: fly launch  (first time)  →  fly deploy  (subsequent)
+app = "acne-cv-playground"
+primary_region = "sin"   # Singapore — change to nearest: nrt/syd/lax/iad/fra
+
+[build]
+  dockerfile = "Dockerfile"
+
+[http_service]
+  internal_port = 8080
+  force_https   = true
+  auto_stop_machines  = true
+  auto_start_machines = true
+  min_machines_running = 0
+
+  [http_service.concurrency]
+    type       = "requests"
+    hard_limit = 25
+    soft_limit = 20
+
+[[vm]]
+  # 21 sklearn models need ~1.5GB RAM; 1GB shared is the minimum free machine
+  # Use "shared-cpu-1x" for $0.0001/s; upgrade to "performance-1x" if OOM
+  size   = "shared-cpu-1x"
+  memory = "2gb"

@@ -1,0 +1,40 @@
+# .gcloudignore
+# Prevent large local directories from being uploaded to Cloud Build
+
+# Inherit Git ignore rules
+.git
+.gitignore
+
+# Gcloud specific
+.gcloudignore
+
+# Ignore python virtual environments
+.venv/
+venv/
+env/
+
+# Ignore node modules
+node_modules/
+frontend/node_modules/
+
+# Ignore local models (since we load them from Hugging Face at runtime)
+models/
+models_6535/
+
+# Ignore training data (only keep the test split for demo images)
+data_split/
+data_split_6535/train/
+acne_1024/
+
+# Ignore development notebooks and other non-app files
+.pytest_cache/
+.claude/
+.cursor/
+.impeccable/
+catboost_info/
+diagnostics/
+*.ipynb
+*.png
+*.md
+fly.toml
+railway.toml

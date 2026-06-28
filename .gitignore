@@ -1,0 +1,76 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.pdf
+*.gz
+*.fdb_latexmk
+*.fls
+
+# Data
+acne_1024/
+
+# Agent Meta
+.superpowers/
+.agents/
+TODO.md
+
+# Python venv
+.venv/
+
+# Frontend build output & deps
+frontend/dist/
+frontend/node_modules/
+
+# Trained model binaries (hosted on HF Hub: will702/acne-cv-models)
+models/**/*.pkl
+models_6535/
+
+# Dataset images (download ACNE04 separately)
+data_split/
+data_split_6535/
+
+# CatBoost training artifacts
+catboost_info/
+
+# Training output charts at root
+accuracy_curve.png
+class_distribution.png
+confusion_matrix.png
+
+# Editor / tool configs (local only)
+.claude/
+.cursor/
+skills-lock.json
+.impeccable/
+
+# Internal planning docs
+docs/superpowers/
+

@@ -1,0 +1,11 @@
+opencv-python-headless
+scikit-image
+scikit-learn==1.7.2
+joblib
+numpy
+pillow
+fastapi
+uvicorn[standard]
+python-multipart
+catboost
+huggingface_hub
